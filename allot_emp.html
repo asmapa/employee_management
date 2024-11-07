@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allot employee</title>
+    <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+    
+    <section class="attendance-section">
+        <div class="container">
+            <h2 class="sub-title">Allot Employee</h2>
+            <form >
+                <label for="eid">Employee ID</label>
+                <input type="text" id="eid" name="eid" placeholder="Enter Employee ID" required>
+		
+		<label for="project_id">Project ID</label>
+                <input type="text" id="project_id" name="project_id" placeholder="Enter Project ID" required>
+		
+		<label for="role">Role</label>
+                <input type="text" id="role" name="role" placeholder="Enter your Role" required>
+
+
+                <button type="button" class="btn " onclick="openpopup()">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="popup" id="popup">
+        
+        <p>Attendance marked successfully!!!</p>
+        <button class="btt" type="button" onclick="closepopup()">OK</button>
+    </div>
+
+
+    <script>
+        let popups=document.getElementById("popup");
+        function openpopup(){
+    
+            popups.classList.add("open-popup");
+    
+        }
+        function closepopup(){
+            window.location.href = "emp_dashBoard.html";
+    
+        }
+    </script>
+    
+
+
+    </body>
+
+</html>

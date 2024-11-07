@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance</title>
+    <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+    
+    <section class="attendance-section">
+        <div class="container">
+            <h2 class="sub-title">Employee Attendance</h2>
+            <form >
+                <label for="employee-id">Employee ID</label>
+                <input type="text" id="employee-id" name="employee_id" placeholder="Enter Employee ID" required>
+
+
+                <button type="button" class="btn " onclick="openpopup()">Submit Attendance</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="popup" id="popup">
+        
+        <p>Attendance marked successfully!!!</p>
+        <button class="btt" type="button" onclick="closepopup()">OK</button>
+    </div>
+
+
+    <script>
+        let popups=document.getElementById("popup");
+        function openpopup(){
+    
+            popups.classList.add("open-popup");
+    
+        }
+        function closepopup(){
+            window.location.href = "emp_dashBoard.html";
+    
+        }
+    </script>
+    
+
+
+    </body>
+
+</html>
